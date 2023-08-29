@@ -1,0 +1,140 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+html,body
+{   height: 100%;
+    width: 100%;
+}
+
+
+#navbar
+{
+    background-color:rgba(255, 255, 255, 0.7);
+    padding: .002%;
+  
+    
+    
+}
+#section1
+{
+    /* background-color:rgb(183, 200, 207); */
+    height: 100vh;
+    background-image: url("assets/elijah-hiett-wW0BUXTTUmU-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center left;
+    position: relative;
+    
+    
+}
+
+
+#section1 h1 {
+    
+    position: absolute;
+    top: 30%; 
+    left: 80%; 
+    transform: translate(-50%, -50%);
+    width: 50%;
+    
+}
+
+#section1 h6 {
+    
+    position: absolute;
+    top: 36%; 
+    left: 80%; 
+    transform: translate(-50%, -50%);
+    width: 50%;
+    
+    
+    
+}
+
+#contactWays
+{   
+    display: flex;
+    top:50%;
+    left: 78.9%; 
+    width: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    
+}
+.contact-icon
+{
+    padding-left: 2%;
+    padding-right: 2%;
+        
+    
+
+    
+}
+#contactWays a
+{
+    text-decoration: none;
+    color: purple; 
+
+   
+}
+@media (max-width: 768px) 
+{
+    #section1 h1{
+        position: absolute;
+        top: 10%; 
+        left: 50%; 
+        transform: translate(-50%, -50%);
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    #section1 h6 {
+    
+        position: absolute;
+        top: 14%; 
+        left: 50%; 
+        transform: translate(-50%, -50%);
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        
+        
+    }
+
+ #contactWays
+{   
+    display: flex;
+    top:20%;
+    left:74.5%;
+    width: 100%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    
+    
+    
+}
+#navbar
+{
+    background-color:rgba(255, 255, 255, 1);
+    padding: .002%;
+  
+    
+    
+}
+
+  }
+#section2
+{
+    background-color:rgb(63, 76, 82);
+    height: 100vh;
+}
+
+#section3
+{
+    background-color:rgb(83, 88, 59);
+    height: 100vh;
+}

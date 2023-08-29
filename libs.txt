@@ -1,0 +1,24 @@
+FancyBox
+glightbox
+swiper
+isotope -layout
+purecounter
+waypoints
+
+
+ScrollMagic
+Typed.js
+Anime.js
+Chart.js
+Masonry
+GreenSock Animation Platform (GSAP)
+Rellax
+Three.js
+Velocity.js
+Particle.js
+
+
+
+https://www.joaoverissimo.work/
+https://squareme.si/en/projects/chipolo/
+https://mbcreative.ca/
