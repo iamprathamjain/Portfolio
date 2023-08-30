@@ -1,140 +1,225 @@
-*{
+* {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-html,body
-{   height: 100%;
+html,
+body {
+    height: 100%;
     width: 100%;
+
 }
 
-
-#navbar
+#section1,#section2,#section3
 {
-    background-color:rgba(255, 255, 255, 0.7);
+    width:100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    
+}
+#navbar {
+    background-color: rgba(255, 255, 255, 0.7);
     padding: .002%;
-  
-    
-    
+    width: 100%;
+
+
+
 }
-#section1
-{
+
+#section1 {
     /* background-color:rgb(183, 200, 207); */
+
     height: 100vh;
     background-image: url("assets/elijah-hiett-wW0BUXTTUmU-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center left;
     position: relative;
+
+
+
+}
+#section1::before
+{
     
-    
+    content: "";
+    background: rgba(2, 45, 57, 0.6);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 
 #section1 h1 {
-    
+
     position: absolute;
-    top: 30%; 
-    left: 80%; 
+    top: 30%;
+    left: 80%;
     transform: translate(-50%, -50%);
     width: 50%;
-    
+    color: white;
+    /* text-shadow: h-shadow v-shadow blur-radius color; */
+
+    text-shadow: 2px 3px 2px black;
+
 }
 
-#section1 h6 {
-    
+
+#section1 h5{
+
     position: absolute;
-    top: 36%; 
-    left: 80%; 
+    top: 36%;
+    left: 80%;
     transform: translate(-50%, -50%);
     width: 50%;
-    
-    
-    
+
+
+
 }
 
-#contactWays
-{   
+#contactWays {
     display: flex;
-    top:50%;
-    left: 78.9%; 
+    top: 50%;
+    left: 78.9%;
     width: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
-    
+
+
 }
-.contact-icon
-{
+
+.contact-icon {
     padding-left: 2%;
     padding-right: 2%;
-        
-    
+    color: white;
+    text-shadow: 1px 1px 2px black;
 
-    
 }
-#contactWays a
-{
+
+.contact-icon:hover {
+
+    color: white;
+    text-shadow: 2px 3px 2px black;
+
+}
+
+#contactWays a {
     text-decoration: none;
-    color: purple; 
-
-   
+    color: purple;
 }
-@media (max-width: 768px) 
+#paragraphs
+{   background-color: transparent;
+    justify-content: start;
+    align-items: center;
+    width: auto;
+    font-size: small;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.section2-paragraphs
 {
-    #section1 h1{
+    text-align: justify;
+    color:white;
+    
+}
+
+
+@media (max-width: 768px) {
+
+    html,body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        background-color: black;
+        
+        
+      }
+      
+    #section1 {
+        background-position:center left;
+        height: 100vh
+        
+    }
+
+    #section2 {
+        background-color: rgb(65, 154, 196);
+        height: 100vh;
+    }
+
+    #section3 {
+        background-color: rgb(83, 88, 59);
+        height: 100vh;
+
+    }
+    #section1,#section2,#section3
+    {
+        width:100%;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        
+    }
+
+    #navbar {
+        width: 100%;
+
+    }
+
+
+    #section1 h1 {
         position: absolute;
-        top: 10%; 
-        left: 50%; 
+        top: 10%;
+        left: 50%;
         transform: translate(-50%, -50%);
         width: 100%;
         display: flex;
         justify-content: center;
     }
-    #section1 h6 {
-    
+
+    #section1 h5 {
+
         position: absolute;
-        top: 14%; 
-        left: 50%; 
+        top: 14%;
+        left: 50%;
         transform: translate(-50%, -50%);
         width: 100%;
         display: flex;
         justify-content: center;
-        
-        
+
+
     }
 
- #contactWays
-{   
-    display: flex;
-    top:20%;
-    left:74.5%;
-    width: 100%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    
-    
-    
-}
-#navbar
-{
-    background-color:rgba(255, 255, 255, 1);
-    padding: .002%;
-  
-    
-    
+    #contactWays {
+        display: flex;
+        top: 20%;
+        left: 74.5%;
+        width: 100%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+    }
+
+
+
+
+
 }
 
-  }
-#section2
-{
-    background-color:rgb(63, 76, 82);
+
+
+
+
+
+#section2 {
+    background-color:  rgba(2, 45, 57, 0.9);
     height: 100vh;
 }
 
-#section3
-{
-    background-color:rgb(83, 88, 59);
+#section3 {
+    background-color: rgb(83, 88, 59);
     height: 100vh;
 }
