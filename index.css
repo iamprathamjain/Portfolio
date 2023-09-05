@@ -12,7 +12,7 @@ body {
 
 }
 
-#section1,#section2,#section3
+#section1,#section2,#section4
 {
     width:100%;
     overflow-x: hidden;
@@ -32,7 +32,7 @@ body {
     /* background-color:rgb(183, 200, 207); */
 
     height: 100vh;
-    background-image: url("assets/elijah-hiett-wW0BUXTTUmU-unsplash.jpg");
+    background-image: url("assets/profile1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center left;
@@ -76,9 +76,17 @@ body {
     left: 80%;
     transform: translate(-50%, -50%);
     width: 50%;
+    color: white;
+    text-shadow: 2px 3px 2px black;
 
 
 
+}
+#section1 #designations
+{
+    color:rgb(120, 176, 228);
+    color:rgb(250, 198, 85);
+    text-shadow: 2px 3px 2px black;
 }
 
 #contactWays {
@@ -126,7 +134,167 @@ body {
     color:white;
     
 }
+#section2 h4{
+    text-shadow: 2px 3px 2px black;
+}
+#section2-acadmics
+{
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 3%;
+    width: auto;
 
+    
+}
+#section2-profilepic
+{
+    
+    background-color: white;
+    padding: 0.3%;
+    border-radius: 5%;
+    height: 50vh;
+    /* height: 6vh; */
+    /* width: 25%; */
+    object-fit:cover;
+    object-position:left center;
+    box-shadow: 6px 6px 6px black;   
+}
+#section2-features
+{   height: 50vh;
+    
+    display: flex;
+    text-align: center;
+  
+    
+}
+
+#section2-features-heading
+{
+    margin-left: 38%;
+    color:whitesmoke;
+    text-shadow: 2px 3px 2px black;
+    
+
+}
+
+#section2-features-details
+{
+color: aliceblue;
+margin-top: 10vh;
+
+}
+.details-ul
+{
+    list-style-type: none;
+    justify-content: center;
+    text-shadow: 2px 3px 2px black;
+    
+}
+.details-ul-li
+{
+ padding-top: 2%;   
+ padding-bottom: 2%;   
+ text-align: justify;
+ 
+
+
+}
+#section2 {
+    background-color:  rgba(2, 45, 57, 0.95);
+    background-color:  rgba(2, 31, 39, 0.95);
+    height: 100vh;
+}
+
+#section4 {
+    background-color: rgba(2, 45, 57, 0.95);
+    background-color:  rgba(2, 31, 39, 0.95);
+    height: 100vh;
+    /* border: white dotted 1px; */
+}
+#section4 h4{
+    text-shadow: 2px 3px 2px black;
+}
+
+
+.swiper {
+    width: 95%;
+    height: 90vh;
+    position: relative;
+    
+    
+  }
+
+  .swiper-slide {
+    text-align: center;
+    background:transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+   
+  }
+
+  .swiper-slide img {
+    display: block;
+    height: 60%;
+    width: 40%;
+    /* object-fit: fill; */
+    border: solid white 1px;
+    margin-left: 30%;
+    mix-blend-mode: multiply;
+    padding: .2%;
+  
+   
+    
+  }
+  .certificate-description
+  {
+    text-align: start;
+    background:transparent;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    left:40%;
+    margin-top: 0.5%;
+    color: aliceblue;
+    /* background-color: black; */
+    position: absolute;
+    
+  }
+  .certificate-description .details-ul
+  {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: smaller;
+    text-shadow: 1px 1px  black;
+  }
+
+  .certificate-description li
+  {
+    
+    padding-top: 0%;   
+    padding-bottom: 0%;   
+    text-align: justify;
+  }
+  .swiper-button-next,.swiper-button-prev
+  {
+    border: solid white 1px;
+    border-radius: 50%;
+    padding: 2.4%;
+    background-color: rgb(255, 255, 255,0);
+    color: white !important;
+   
+    
+  }
+  .swiper-pagination{
+    margin-bottom: 2%;
+    
+  }
 
 @media (max-width: 768px) {
 
@@ -139,24 +307,9 @@ body {
         
         
       }
-      
-    #section1 {
-        background-position:center left;
-        height: 100vh
-        
-    }
+    
 
-    #section2 {
-        background-color: rgb(65, 154, 196);
-        height: 100vh;
-    }
-
-    #section3 {
-        background-color: rgb(83, 88, 59);
-        height: 100vh;
-
-    }
-    #section1,#section2,#section3
+    #section1,#section2,#section4
     {
         width:100%;
         overflow-x: hidden;
@@ -202,24 +355,187 @@ body {
         transform: translate(-50%, -50%);
 
     }
+      
+    #section1 {
+        background-position:center left;
+        height: 100vh
+        
+    }
+    #section2 {
+        background-color:  rgba(2, 45, 57, 0.9);
+        height: 100vh;
+        
+    }
 
+    #paragraphs
+{   background-color: transparent;
+    justify-content: start;
+    align-items: center;
+    width: auto;
+    font-size: small;
+    margin-left: 4%;
+    margin-right:4%;
+}
 
+#section2-acadmics
+{
+    
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 3%;
+    
+}
+#section2-profilepic
+{
+    
+    background-color: white;
+    padding: 0.3%;
+    border-radius: 5%;
+    height: 20vh;
+    /* height: 6vh; */
+    width: 100%;
+    object-fit:cover;
+    object-position:left center;
+    box-shadow: 6px 6px 6px black;   
+}
+#section2-features
+{   height: 50vh;
+    width: 100%;
+    display: flex;
+    text-align: center;
+  
+    
+}
+#section2-features-details
+{
+color: aliceblue;
+margin-top: 1vh;
 
+}
+#section2-features-heading
+{
+    
+    display: none;
+    
+
+}
+.details-ul
+{
+    list-style-type: none;
+    justify-content: center;
+    text-shadow: 2px 2px 2px black;
+    font-size: smaller;
+    width: 100%;
+    /* border:1px white dotted; */
+    margin-left:13%;
+    
+}
+.details-ul-li
+{
+ padding-top: 2%;   
+ padding-bottom: 2%;   
+ text-align: justify;
+ 
 
 
 }
 
-
-
-
-
-
-#section2 {
-    background-color:  rgba(2, 45, 57, 0.9);
+#section4 {
+    
+    background-color:  rgba(2, 31, 39, 0.95);
     height: 100vh;
+    /* border: white dotted 1px; */
+}
+#section4 h4{
+    text-shadow: 2px 3px 2px black;
+    margin-top: 5%;
+}
+.swiper {
+    width: 100%;
+    height: 80vh;
+    
+    /* position: relative; */
+    
+    
+  }
+  .swiper-slide {
+    text-align: center;
+    background:transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 5%;
+   
+  }
+
+  .swiper-slide img {
+    
+    height: 40%;
+    width: 99%;
+    /* object-fit: fill; */
+    border: solid white 0px;
+    margin-left: 0%;
+    mix-blend-mode: multiply;
+    padding: .2%;
+  
+   
+    
+  }
+  .certificate-description
+  {
+    text-align: start;
+    background:transparent;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 1%;
+    position: absolute;
+    left:auto;
+    right: auto;
+
+
+    
+  }
+  .certificate-description .details-ul
+  {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: smaller;
+    text-shadow: 1px 1px  black;
+    margin-left:15%;
+  }
+
+  .certificate-description li
+  {
+    
+    padding-top: 0%;   
+    padding-bottom: 0%;   
+    text-align: justify;
+  }
+  .swiper-button-next,.swiper-button-prev
+  {
+    
+    display: none !important ;  
+    
+  }
+  .swiper-pagination{
+    margin-bottom: 2%;
+    
+  }
+
+
+
 }
 
-#section3 {
-    background-color: rgb(83, 88, 59);
-    height: 100vh;
-}
+
+
+
+
+
+
+
