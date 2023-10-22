@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    *
+    {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+    body,html
+    {
+        height: 100%;
+        width: 100%;
+    }
+
+    .prescription_head .prescription_logo {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .prescription_head .prescription_logo img {
+        align: center;
+        justify-content: center;
+        width: 50%;
+        height: 20%;
+    }
+
+    .prescription_head .prescription_head_details {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .left_details .left_details_list {
+        width: 50vw;
+        
+    }
+
+    .prescription_head .left_details table {
+        width: 100%;
+    }
+  
+    .footer_right_items_pres .right_footer_dr_auth {
+        display: flex;
+        justify-content: end;
+    }
+
+    .footer_right_items_pres .right_footer_dr_auth .sign_footer {
+        width: 100px; /* Define the width of the image */
+    }
+
+    .prescription_table {
+    border-collapse: collapse; /* Collapse borders to create a single border */
+    width: 100%;
+    margin: auto;
+    
+}
+
+.prescription_table th,
+.prescription_table td {
+    border: 1px solid #000; /* Add a border to table header and data cells */
+    padding: 8px;
+    text-align: center;
+}
+.prescription_body h6{
+
+font-size: medium;
+ margin-top: .10%;
+ margin-bottom: .10%;
+
+}
+
+.prescription_body h4{
+
+font-size: medium;
+ margin-top: .10%;
+ margin-bottom: .10%;
+}
+
+.advice-note
+{
+font-size: medium;
+ margin-top: .10%;
+ margin-bottom: .10%;
+
+}
+ 
+  </style>
+  <body>
+    <div class="prescription_sub_container subpage">
+      <div class="prescription_head">
+        <div class="prescription_logo">
+          <img src="https://localhost/180923/bassets/img/logo.png" alt="logo">
+          <br>
+          <br>
+        </div>
+        <div class="prescription_head_details">
+          <div class="left_details">
+            <table class="left_details_list">
+              <tr>
+                <td><b>PID</b></td>
+                <td>:</td>
+                <td>PID0031</td>
+              </tr>
+              <tr>
+                <td><b>Patient Name</b></td>
+                <td>:</td>
+                <td>Pratham Jain</td>
+              </tr>
+              <tr>
+                <td><b>Age & Sex</b></td>
+                <td>:</td>
+                <td>23/Male</td>
+              </tr>
+              <tr>
+                <td><b>Patient Address</b></td>
+                <td>:</td>
+                <td>xyz, bhopal</td>
+              </tr>
+            </table>
+          </div>
+          <div class="left_details">
+            <div class="left_details_list">
+              <table>
+                <tr>
+                  <td><b>Date & Time</b></td>
+                  <td>:</td>
+                  <td>22 September 2023 03:09:38</td>
+                </tr>
+                <tr>
+                  <td><b>Appointment ID</b></td>
+                  <td>:</td>
+                  <td>APP0159</td>
+                </tr>
+                <tr>
+                  <td><b>Clinic ID</b></td>
+                  <td>:</td>
+                  <td>CL0101</td>
+                </tr>
+                <tr>
+                  <td><b>Clinic name</b></td>
+                  <td>:</td>
+                  <td>Demo Eclinic</td>
+                </tr>
+                <tr>
+                  <td><b>Clinic Address</b></td>
+                  <td>:</td>
+                  <td>Residential: 2271 Om vihar uttam nagar west delhi new delhi India 110090</td>
+                </tr>
+                <tr>
+                  <td><b>Clinic contact</b></td>
+                  <td>:</td>
+                  <td>9090907667</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="prescription_body">
+        <h6 style=" "><b>Vital:</b></h6>
+        <h6 style=" "><b>Clinical Notes:</b></h6>
+        <h6 style=" " class="differential_diagnose"><b>Differential diagnosis:</b></h6>
+        <h4 style=" " class="table_prescription_title">Rx Medication:</h4>
+        <table class="prescription_table ">
+          <thead>
+            <tr>
+              <th>S. No</th>
+              <th>Medicine</th>
+              <th>Strength</th>
+              <th>Dose</th>
+              <th>Frequency</th>
+              <th>Duration</th>
+              <th>Instruction</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>METOCARD-XL( Metoprolol )</td>
+              <td>25 mg</td>
+              <td></td>
+              <td></td>
+              <td> days</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="prescription_footer">
+        <div class="footer_left_items_pres">
+          <h5 class="advice_note"  ><b>Advice:</b></h5>
+          <h5 class="advice_note"  ><b>Lab Investigation Required:</b></h5>
+          <h5 class="advice_note" ><b>Follow up:</b> with reports or after 1 days.</h5>
+        </div>
+        <div class="footer_right_items_pres">
+          <div class="right_footer_dr_auth"><img
+              src="https://localhost/180923/img/doctor_upload/11326f378a1695216421.pdf" alt="Signature"
+              class="sign_footer">
+            <ul class="footer_link">
+              <li>Doctor`s Name: Dr.Pratham Jain</li>
+              <li>Qualification:MBBS( Psychologist )</li>
+              <li>National Reg. No:67747474737</li>
+              <li>State Reg. No:4343434434</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

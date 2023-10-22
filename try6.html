@@ -1,0 +1,271 @@
+<html>
+
+<body>
+    <style>
+        /* Define CSS variables for font size and font family */
+        :root {
+            --font-size: 15px;
+            --font-family: 'Arial Narrow', Arial, sans-serif;
+        }
+
+        /* Rest of your CSS */
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        body,
+        html {
+            height: 100%;
+            width: 100%;
+        }
+
+        .prescription_head .prescription_logo {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .prescription_head .prescription_logo img {
+            align: center;
+            justify-content: center;
+            width: 50%;
+            height: 20%;
+        }
+
+        .prescription_head .prescription_head_details {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 3%;
+            margin-bottom: 3%;
+        }
+
+        .left_details .left_details_list {
+            width: 50vw;
+            text-align: start;
+        }
+
+        .prescription_head .left_details table {
+            width: 100%;
+        }
+
+        .footer_right_items_pres .right_footer_dr_auth {
+            display: flex;
+            justify-content: end;
+        }
+
+        .footer_right_items_pres .right_footer_dr_auth .sign_footer {
+
+            width: 100px;
+            /* Define the width of the image */
+        }
+
+        .prescription_table {
+            border-collapse: collapse;
+            /* Collapse borders to create a single border */
+            width: 100%;
+            margin: auto;
+        }
+
+        .prescription_table th,
+        .prescription_table td {
+            border: 1px solid #000;
+            /* Add a border to table header and data cells */
+            padding: 8px;
+            text-align: center;
+            font-size: var(--font-size);
+            font-family: var(--font-family);
+        }
+
+        .prescription_body h6 {
+            font-size: var(--font-size);
+            margin-top: .5%;
+            margin-bottom: .5%;
+        }
+
+        .prescription_body h4 {
+            font-size: var(--font-size);
+            margin-top: .5%;
+            margin-bottom: .5%;
+        }
+
+        .prescription_footer h5 {
+            font-size: var(--font-size);
+            margin-top: .5%;
+            margin-bottom: .5%;
+        }
+
+        .advice-note {
+            font-size: medium;
+            margin-top: .10%;
+            margin-bottom: .10%;
+        }
+
+        .prescription_table th:nth-child(2) {
+            width: auto;
+        }
+
+
+        .left_details_list tr td:nth-child(1),
+        .left_details_list tr td:nth-child(2) {
+            font-size: var(--font-size);
+            font-family: var(--font-family);
+        }
+
+        .left_details_list tr td:nth-child(3) {
+            font-size: var(--font-size);
+        }
+
+        .prescription_table td {
+            font-size: 14px;
+            font-family: var(--font-family);
+        }
+
+        .prescription_table th {
+            font-size: var(--font-size);
+            font-family: var(--font-family);
+        }
+
+        .footer_link {
+            list-style: none;
+            font-size: var(--font-size);
+        }
+    </style>
+    <div class="prescription_sub_container subpage">
+        <div class="prescription_head">
+            <div class="prescription_logo" style="align: center;">
+                <img src="https://localhost/1809/bassets/img/logo.png" alt="logo" style="align: center;">
+                <br>
+                <br>
+            </div>
+            <div class="prescription_head_details">
+                <div class="left_details">
+                    <table class="left_details_list">
+                        <tr>
+                            <td><b>PID</b>
+                            <td>:</td>
+                            </td>
+                            <td>PID0023</td>
+                        </tr>
+                        <tr>
+                            <td><b>Patient Name</b>
+                            <td>:</td>
+                            </td>
+                            <td>aadi</td>
+                        </tr>
+                        <tr>
+                            <td><b>Age & Sex</b>
+                            <td>:</td>
+                            </td>
+                            <td>27/Male</td>
+                        </tr>
+                        <tr>
+                            <td><b>Patient Address</b>
+                            <td>:</td>
+                            </td>
+                            <td>gutututvyuug juug uugu guggu ugu</td>
+                        </tr>
+                    </table>
+
+                </div>
+                <div class="left_details">
+                    <div class="left_details_list">
+                        <table>
+                            <tr>
+                                <td><b>Date & Time</b>
+                                <td>:</td>
+                                </td>
+                                <td>10 October 2023 07:37:11</td>
+                            </tr>
+                            <tr>
+                                <td><b>Appointment ID</b>
+                                <td>:</td>
+                                </td>
+                                <td>APP0159</td>
+                            </tr>
+                            <tr>
+                                <td><b>Clinic ID</b>
+                                <td>:</td>
+                                </td>
+                                <td>CL0101</td>
+                            </tr>
+                            <tr>
+                                <td><b>Clinic name</b>
+                                <td>:</td>
+                                </td>
+                                <td>Demo Eclinic</td>
+                            </tr>
+                            <tr>
+                                <td><b>Clinic Address</b>
+                                <td>:</td>
+                                </td>
+                                <td>Residential: 2271 Om vihar uttam nagar west delhi new delhi India 110090</td>
+                            </tr>
+                            <tr>
+                                <td><b>Clinic contact</b>
+                                <td>:</td>
+                                </td>
+                                <td>9090907667</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="prescription_body">
+            <h6><b>Vital:</b></h6>
+            <h6><b>Clinical Notes:</b>one</h6>
+            <h6 class="differential_diagnose"><b>Differential diagnosis:</b>two</h6>
+            <h4 class="table_prescription_title">Rx Medication:</h4>
+
+            <table class="prescription_table">
+                <thead>
+                    <tr>
+                        <th>S. No</th>
+                        <th>Medicine</th>
+                        <th>Strength</th>
+                        <th>Dose</th>
+                        <th>Frequency</th>
+                        <th>Duration</th>
+                        <th>Instruction</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>CDE!@#( Nikhil )</td>
+                        <td>200mg</td>
+                        <td>4</td>
+                        <td>Once a DAY</td>
+                        <td>44 days</td>
+                        <td>After Meals</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="prescription_footer">
+            <div class="footer_left_items_pres">
+                <h5 class="advice_note"><b>Advice:</b>adci</h5>
+                <h5 class="advice_note"><b>Lab Investigation Required:</b>ds</h5>
+                <h5 class="advice_note"><b>Follow up:</b> with reports or after 44 days.</h5>
+            </div>
+            <div class="footer_right_items_pres">
+                <div class="right_footer_dr_auth"><img
+                        src="https://localhost/1809/img/doctor_upload/28690f87261691834591.png" alt="Signature"
+                        class="sign_footer">
+                    <ul class="footer_link">
+                        <li>Doctor`s Name: Dr.Nikhil Sharma</li>
+                        <li>Qualification:MBBS( Psychologist )</li>
+                        <li>National Reg. No:QWER2132D</li>
+                        <li>State Reg. No:QAWSE123</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

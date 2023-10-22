@@ -1,0 +1,55 @@
+Certainly, here's a complete example of a webpage that allows you to access the camera, check its current state, toggle the camera on and off, and update the status accordingly:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera Control</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6 text-center">
+                <h1>Camera Control</h1>
+                <p id="cameraStatus">Camera is off</p>
+                <button id="cameraToggle" class="btn btn-primary mt-3">Toggle Camera</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const cameraToggle = document.getElementById('cameraToggle');
+        const cameraStatus = document.getElementById('cameraStatus');
+        let isCameraOn = false;
+        let mediaStream = null;
+
+        async function checkCameraPermission() {
+            try {
+                mediaStream = await navigator.mediaDevices.getUserMedia({ video: true });
+                isCameraOn = true;
+                cameraStatus.textContent = 'Camera is on';
+            } catch (error) {
+                console.error('Error accessing the camera:', error);
+                cameraStatus.textContent = 'Camera is off';
+            }
+        }
+
+        async function toggleCamera() {
+            if (isCameraOn) {
+                if (mediaStream) {
+                    mediaStream.getTracks().forEach(track => track.stop());
+                    mediaStream = null;
+                }
+                cameraStatus.textContent = 'Camera is off';
+                isCameraOn = false;
+            } else {
+                await checkCameraPermission();
+            }
+        }
+
+        cameraToggle.addEventListener('click', toggleCamera);
+    </script>
+</body>
+</html>
