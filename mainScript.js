@@ -73,13 +73,16 @@ function crousals2()
 
 function display(t) {
   console.log(t);
-
+  
   // Step 1: Add class 'd-none' to elements with class "resume-btn" if not exists
   var resumeButtons = document.querySelectorAll(".section3-item");
   for (var i = 0; i < resumeButtons.length; i++) {
     if (!resumeButtons[i].classList.contains("d-none")) {
       resumeButtons[i].classList.add("d-none");
     }
+
+    
+    
   }
 
   // Step 2: Check the value of t and remove "d-none" from the appropriate element
@@ -87,11 +90,13 @@ function display(t) {
     var experienceElement = document.querySelector("#experience");
     if (experienceElement) {
       experienceElement.classList.remove("d-none");
-    }
+      }
+    
   } else if (t.getAttribute("value") === "education") {
     var educationElement = document.querySelector("#education");
     if (educationElement) {
       educationElement.classList.remove("d-none");
+     
     }
   }
 }
